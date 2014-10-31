@@ -252,6 +252,9 @@ on post-fs-data
     restorecon /sys/class/timed_output/vibrator/amp
     restorecon /sys/devices/virtual/graphics/fb0/rgb
 
+    # disable diag port
+    rm /dev/diag
+
 on charger
     trigger charger-fs
     # Enable Power modes and set the CPU Freq Sampling rates
