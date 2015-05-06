@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+# http://b/15193147
+# TODO(danalbert): Remove this once stlport is dead and gone.
+PRODUCT_PACKAGES +=  libstlport
+
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/init.gee-common.rc:root/init.gee-common.rc \
         $(LOCAL_PATH)/init.gee.usb.rc:root/init.gee.usb.rc
