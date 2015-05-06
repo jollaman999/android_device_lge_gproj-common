@@ -214,6 +214,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
+## Volume Steps
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.config.vc_call_vol_steps=10 \
+	ro.config.media_vol_steps=40
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/fetch-swv:system/bin/fetch-swv
 
