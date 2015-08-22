@@ -220,6 +220,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/fetch-swv:system/bin/fetch-swv
 
+## G3 Ringtone
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/audio/Lifes_Good.ogg:/system/media/audio/ringtones/Lifes_Good.ogg
+
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
 
 # This is the mako-specific audio package
