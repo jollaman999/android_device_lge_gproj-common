@@ -85,6 +85,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
+
 BOARD_RIL_CLASS := ../../../device/lge/gproj-common/ril/
 
 BOARD_HARDWARE_CLASS := device/lge/gproj-common/cmhw/
