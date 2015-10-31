@@ -1,4 +1,4 @@
 allow qmuxd self:process execmem;
 
 # Access to /sys/devices/virtual/smdpkt/smdcntl*/open_timeout
-allow qmux sysfs_smdcntl_open_timeout:file rw_file_perms;
+allow qmuxd sysfs_smdcntl_open_timeout:file rw_file_perms;
