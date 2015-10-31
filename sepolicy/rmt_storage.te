@@ -4,3 +4,6 @@ allow rmt_storage self:capability sys_rawio;
 
 allow rmt_storage kmem_device:chr_file rw_file_perms;
 allow rmt_storage self:process execmem;
+
+# Allow access to /dev/uio0.
+allow rmt_storage uio_device:chr_file rw_file_perms;
