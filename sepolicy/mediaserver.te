@@ -1,1 +1,1 @@
-allow mediaserver camera_prop:property_service set;
+set_prop(mediaserver, camera_prop)

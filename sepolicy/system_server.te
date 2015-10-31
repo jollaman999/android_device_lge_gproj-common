@@ -1,5 +1,5 @@
 # This fixes the SetupWizard (Jira NIGHTLIES-1142)
-allow system_server default_prop:property_service set;
+set_prop(system_server, default_prop)
 allow system_server touchpanel_sysfs:file { write read };
 allow system_server touchpanel_sysfs:file open;
 allow system_server touchpanel_sysfs:dir search;
