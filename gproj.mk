@@ -228,6 +228,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio/Lifes_Good.ogg:/system/media/audio/ringtones/Lifes_Good.ogg
 
+## jolla-kernel
+PRODUCT_PACKAGES += \
+	A2DPChecker \
+	USB-Keyboard
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libapplication.so:/system/app/USB-Keyboard/lib/arm/libapplication.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libsdl-1.2.so:/system/app/USB-Keyboard/lib/arm/libsdl-1.2.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libsdl_image.so:/system/app/USB-Keyboard/lib/arm/libsdl_image.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libsdl_main.so:/system/app/USB-Keyboard/lib/arm/libsdl_main.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libsdl_native_helpers.so:/system/app/USB-Keyboard/lib/arm/libsdl_native_helpers.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libsdl_ttf.so:/system/app/USB-Keyboard/lib/arm/libsdl_ttf.so \
+	$(LOCAL_PATH)/app/USB-Keyboard/lib/arm/libvncserver.so:/system/app/USB-Keyboard/lib/arm/libvncserver.so
+
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
 
 # This is the mako-specific audio package
