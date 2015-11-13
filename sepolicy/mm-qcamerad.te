@@ -1,6 +1,5 @@
-type_transition mm-qcamerad system_data_file:sock_file camera_socket "cam_socket0";
-
-allow mm-qcamerad system_data_file:sock_file unlink;
+type_transition mm-qcamerad system_data_file:dir camera_socket "cam_socket0";
+allow mm-qcamerad system_data_file:dir w_dir_perms;
 
 # mm-qcamera-daemon needs this. Why? Who knows!
 allow mm-qcamerad gpu_device:chr_file { open read write ioctl };
