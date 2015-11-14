@@ -179,9 +179,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
         libmm-omxcore \
 	libdivxdrmdecrypt \
+	libextmedia_jni \
+	libOmxCore \
 	libOmxVdec \
 	libOmxVenc \
-	libOmxCore \
+	libOmxVidcCommon \
+	libqcmediaplayer \
 	libstagefrighthw \
 	libc2dcolorconvert
 
